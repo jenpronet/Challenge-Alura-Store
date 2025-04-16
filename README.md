@@ -36,7 +36,6 @@ Cada archivo contiene:
 - **Pandas**: Manipulación y análisis de datos.
 - **Matplotlib / Seaborn**: Visualización de gráficos.
 - **Folium (opcional)**: Mapas interactivos.
-- **python-docx**: Generación automática del informe en formato Word.
 - **Google Colab**: Ejecución de notebooks en la nube.
 
 ---
