@@ -55,7 +55,7 @@ Cada archivo contiene:
 
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/tu_usuario/Challenge-Alura-Store.git
+   git clone https://github.com/jenpronet/Challenge-Alura-Store.git
    cd Challenge-Alura-Store
 
 2. Abre el notebook en Google Colab https://colab.research.google.com/ para ejecutar el análisis completo.
