@@ -1,64 +1,107 @@
-# 📊 Análisis de Rendimiento de Tiendas - Proyecto Challenge Alura Store
+# 📊 Informe Final de Análisis de Tiendas - Alura Store
 
-Este proyecto tiene como objetivo analizar el rendimiento de 4 tiendas en línea del Sr. Juan, utilizando datos de ventas extraídos desde archivos `.csv`. A través del análisis, se identifican las tiendas más rentables y se emiten recomendaciones sobre cuál tienda cerrar para mejorar el negocio, el cual esta reflejado en el informe https://github.com/jenpronet/Challenge-Alura-Store/blob/045110aacce5f5c6f31599fba346e2da9e019710/Informe_Tiendas_Juan.docx (para su visualizacion haz click en View raw).
+## 1. 🧭 Introducción
 
----
+El presente informe tiene como objetivo determinar **cuál de las cuatro tiendas del Sr. Juan debe ser vendida**, con base en un análisis exhaustivo de desempeño. Se consideraron múltiples variables clave para la toma de decisión:
 
-## 🧠 Objetivo
+- Ingresos totales por tienda  
+- Categorías de productos más y menos vendidos  
+- Calificaciones promedio de los clientes  
+- Productos más y menos vendidos  
+- Costo de envío promedio
 
-Determinar cuál de las 4 tiendas debe cerrar el Sr. Juan basándose en:
-
-- Ingresos totales.
-- Productos y categorías más y menos vendidos.
-- Calificaciones promedio de los clientes.
-- Costos de envío promedio.
-- Distribución geográfica de las ventas.
+Este análisis identifica fortalezas y debilidades de cada tienda, brindando una recomendación clara y objetiva.
 
 ---
 
-## 📁 Datos Utilizados
+## 2. 📌 Desarrollo
 
-Los datos provienen de 4 archivos CSV con información de ventas:
+### 2.1. 💰 Ingresos Totales por Tienda
 
-- `tienda_1.csv`
-- `tienda_2.csv`
-- `tienda_3.csv`
-- `tienda_4.csv`
+| Tienda  | Ingreso Total          |
+|---------|------------------------|
+| Tienda 1 | $1,150,880,400.00 ✅ |
+| Tienda 2 | $1,116,343,500.00     |
+| Tienda 3 | $1,098,019,600.00     |
+| Tienda 4 | $1,038,375,700.00 ❌ |
 
-Cada archivo contiene:
-- Producto, Categoría del Producto, Precio, Costo de envío, Fecha de Compra, Calificación, Método de Pago, Coordenadas (lat/lon), entre otros.
-
----
-
-## 🧰 Herramientas y Librerías Usadas
-
-- **Python 3**
-- **Pandas**: Manipulación y análisis de datos.
-- **Matplotlib / Seaborn**: Visualización de gráficos.
-- **Folium (opcional)**: Mapas interactivos.
-- **Google Colab**: Ejecución de notebooks en la nube.
+**➡️ Conclusión**: La Tienda 1 es la más rentable. La Tienda 4 muestra el menor ingreso.
 
 ---
 
-## 📈 Análisis Realizados
+### 2.2. 📦 Ventas por Categoría
 
-- **Ingresos totales por tienda**
-- **Categorías más vendidas por tienda**
-- **Productos más y menos vendidos**
-- **Calificaciones promedio**
-- **Costo de envío promedio**
-- **Distribución geográfica de las ventas** (opcional extra)
+Todas las tiendas comparten un patrón similar:
+
+- **Categorías más vendidas**: Muebles y Electrónicos
+- **Categorías menos vendidas**: Artículos para el hogar, Libros e Instrumentos musicales
+
+**➡️ Conclusión**: Aunque similares, la Tienda 3 lidera en cantidad total de ventas por categoría.
 
 ---
 
-## 📄 Conclusiones del Informe
+### 2.3. 🌟 Calificación Promedio por Tienda
 
-Tras el análisis:
+| Tienda  | Calificación Promedio |
+|---------|------------------------|
+| Tienda 1 | 3.98 ❌              |
+| Tienda 2 | 4.04                 |
+| Tienda 3 | 4.05 ✅              |
+| Tienda 4 | 4.00                 |
 
-- La **Tienda 2** y **Tienda 3** se destacan por sus ingresos altos, buena satisfacción del cliente y fuerte presencia geográfica.
-- La **Tienda 1**, en cambio, muestra los **ingresos más bajos**, **calificaciones promedio menores**, y **productos con poca rotación**, además de una **dispersión geográfica menor**, lo que la convierte en la mejor candidata para cerrar.
+**➡️ Conclusión**: Tienda 3 tiene la mejor satisfacción del cliente.
 
-✅ **Recomendación:** Cerrar la **Tienda 1** y enfocar esfuerzos en mejorar y potenciar las otras tres tiendas.
+---
+
+### 2.4. 🏆 Productos Más y Menos Vendidos
+
+#### Más vendidos:
+- **Tienda 1**: Microondas, TV LED UHD 4K, Armario
+- **Tienda 2**: Iniciando en programación, Batería, Microondas
+- **Tienda 3**: Kit de bancas, Mesa de comedor, Cama king
+- **Tienda 4**: Cama box, Cubertería, Power BI Dashboards
+
+#### Menos vendidos:
+- Repetición de productos con baja demanda como: Guitarra eléctrica, Pandereta, Ciencia de datos con Python, Celular ABXY
+
+**➡️ Conclusión**: Tienda 1 y 2 presentan más consistencia en sus productos top. Las demás presentan más dispersión.
+
+---
+
+### 2.5. 🚚 Costo de Envío Promedio
+
+| Tienda  | Costo de Envío Promedio |
+|---------|-------------------------|
+| Tienda 1 | $26,018.61 ❌          |
+| Tienda 2 | $25,216.24             |
+| Tienda 3 | $24,805.68             |
+| Tienda 4 | $23,459.46 ✅          |
+
+**➡️ Conclusión**: Tienda 4 es la más eficiente en logística. Tienda 1 la más costosa.
+
+---
+
+## 3. ✅ Conclusión y Recomendación
+
+Luego de evaluar los factores clave, se concluye que:
+
+> ### 💡 **El Sr. Juan debería vender la Tienda 4**
+
+### 🎯 Justificación:
+- **Menor ingreso**: $1,038,375,700.00
+- **Calificación promedio baja**: 4.00
+- **Ventas por categoría similares**, pero no destaca
+- **Costo logístico bajo**, pero no compensa los puntos anteriores
+
+### 🏪 Tiendas a conservar:
+- **Tienda 1**: Mayor ingreso total y ventas consistentes
+- **Tienda 2**: Buen balance entre ingreso, satisfacción y logística
+- **Tienda 3**: Mejor calificación y costos de envío competitivos
+
+---
+
+
+✅ **Recomendación:** Cerrar la **Tienda 4** y enfocar esfuerzos en mejorar y potenciar las otras tres tiendas.
 
 ---
 
