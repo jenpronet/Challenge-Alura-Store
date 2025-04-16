@@ -1,6 +1,6 @@
 # 📊 Análisis de Rendimiento de Tiendas - Proyecto Challenge Alura Store
 
-Este proyecto tiene como objetivo analizar el rendimiento de 4 tiendas en línea del Sr. Juan, utilizando datos de ventas extraídos desde archivos `.csv`. A través del análisis, se identifican las tiendas más rentables y se emiten recomendaciones sobre cuál tienda cerrar para mejorar el negocio.
+Este proyecto tiene como objetivo analizar el rendimiento de 4 tiendas en línea del Sr. Juan, utilizando datos de ventas extraídos desde archivos `.csv`. A través del análisis, se identifican las tiendas más rentables y se emiten recomendaciones sobre cuál tienda cerrar para mejorar el negocio, el cual esta reflejado en el informe https://github.com/jenpronet/Challenge-Alura-Store/blob/045110aacce5f5c6f31599fba346e2da9e019710/Informe_Tiendas_Juan.docx .
 
 ---
 
